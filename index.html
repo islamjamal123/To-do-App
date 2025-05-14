@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="practice.css">
+</head>
+<body>
+    
+    <nav class="uppernav">
+        <button class="upperbuttons">All</button>
+        <button class="upperbuttons">Work</button>
+        <button class="upperbuttons">Personal</button>
+        <button class="upperbuttons">Wishlist</button>
+        <button class="upperbuttons">Birthday</button>
+        </nav>
+
+        <div class="topbar-container">
+        <button class="top-button" onclick="topDropMenu()">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </button>
+
+    <div class="topmenu">
+        <a href="#">Manage Categories</a>
+        <a href="#">Search</a>
+        <a href="#">Sort by</a>
+        <a href="#">Print</a>
+        <a href="#">Upgrade to PRO</a>
+    </div>
+</div>
+    <nav class="lowernav">
+        <div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+    <div class="lowerbuttons button1">
+        <img src="./images/mine.jfif" alt="tasks-image">
+        <a href="#">Tasks</a>
+    </div>
+    <div class="lowerbuttons" >
+        <img src="./images/calendar.png" alt="calendar-image">
+        <a href="#">Calendar</a>
+    </div>
+    <div class="lowerbuttons">
+        <img src="./images/mine.jfif" alt="mine-image">
+        <a href="#">Mine</a>
+
+    </div>
+
+</nav>
+        <div class="sidebar">
+            <h2>To-Do List</h2>
+            <div class="container">
+            <img src="./images/crown.png" alt="crown-image" class="img" width="25">
+            <a href="#">Upgrade to PRO</a>
+            </div>
+            <div class="container">
+            <img src="./images/star.png" alt="star-image" class="img" width="25">
+            <a href="#">Star Tasks</a>
+            </div>
+            <div class="container">
+            <img src="./images/category.png" alt="category-image" class="img" width="25">
+            <a href="#">Category</a>
+            </div>
+            <div class="container">
+            <img src="./images/theme.png" alt="theme-image" class="img" width="25">
+            <a href="#">Theme</a>
+            </div>
+            <div class="container">
+            <img src="./images/widget.png" alt="widget-image" class="img" width="25">
+            <a href="#">Widget</a>
+            </div>
+            <div class="container">
+            <img src="./images/donate.png" alt="donate-image" class="img" width="25">
+            <a href="#">Donate</a>
+            </div>
+            <div class="container">
+            <img src="./images/family.png" alt="family-image" class="img" width="25">
+            <a href="#">Family Apps</a>
+            </div>
+            <div class="container">
+            <img src="./images/feedback.png" alt="feedback-image" class="img" width="25">
+            <a href="#">Feedback</a>
+            </div>
+            <div class="container">
+            <img src="./images/faq.png" alt="faq-image" class="img" width="25">
+            <a href="#">FAQ</a>
+            </div>
+            <div class="container">
+            <img src="./images/settings.png" alt="settings-image" class="img" width="25">
+            <a href="#">Settings</a>
+           </div> 
+        </div>
+
+        <button class="addtask" onclick="toggleTaskInput()">+</button>
+
+        <div class="input-container">
+        <input class ='taskinput' type="text" placeholder="  Input new task here"/>
+        <button class="append-task"> <img src="./images/send.png" alt="send-button" onclick="toggleInput()"></button>
+        </div>
+
+        <div class="text-container">
+            <h2 class="bodyheader"></h2>
+            <div class="tasklist"></div>
+            <h2 class="completedheader"></h2>
+            <div class="completedlist"></div>
+        </div>
+        
+
+
+
+
+
+    
+    <script src="practice.js"></script>
+</body>
+</html>
